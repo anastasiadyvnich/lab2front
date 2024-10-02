@@ -1,0 +1,65 @@
+.red_ball {
+    background-color: rgba(255, 0, 0, 40%);
+}
+
+.blue_ball {
+    background-color: rgba(0, 40, 255, 40%);
+}
+
+.green_ball {
+    background-color: rgba(40, 255, 40, 40%);
+}
+
+.shape {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.bottom_container {
+    display: flex;
+    margin-left: 20px;
+}
+
+.left_container {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+
+.red_ball_left {
+    position: absolute;
+    left: 25%;
+    z-index: 1;
+}
+
+.green_ball_left {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 3;
+}
+
+.blue_ball_left {
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    z-index: 2;
+}
+
+.red_ball_right {
+    transform: translate(0px, 0px);
+}
+
+.blue_ball_right {
+    transform: translateY(-40%) translateX(40%);
+}
+
+.green_ball_right {
+    transform: translateY(-140%) translateX(-40%);
+}
+
+.right_container {
+    margin-left: 500px;
+}

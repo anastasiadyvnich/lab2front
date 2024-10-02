@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ІМ-23 Дивнич А.Я. Лаб. 2 </title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        table, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        td {
+            width: 200px;
+            height: 20px;
+        }
+
+        #first_row {
+            height: 50px;
+            background-color: #058f8f;
+            color: #130025;
+        }
+
+        #first_row:hover {
+            background-color: #130025;
+            color: #058f8f
+        }
+
+        #second_row {
+            background-color: #f5f505;
+            color: #6A00FF;
+        }
+
+        #second_row:hover {
+            background-color: #6A00FF;
+            color: #f5f505;
+        }
+
+        .last_cell {
+            width: 400px;
+        }
+
+        .inner_cell {
+            width: 50px;
+        }
+
+        .top_container {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="top_container">
+    <table>
+        <tr id="first_row">
+            <td>Дивнич</td>
+            <td colspan="2">Анастасія</td>
+            <td class="last_cell">Ярославівна</td>
+        </tr>
+        <tr id="second_row">
+            <td rowspan="2">ІМ-23</td>
+            <td class="inner_cell" rowspan="2">Лаб. робота 2</td>
+            <td class="inner_cell"></td>
+            <td class="last_cell" rowspan="2">Варіант 5</td>
+        </tr>
+
+        <tr>
+            <td class="inner_cell"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <td class="last_cell"></td>
+        </tr>
+    </table>
+</div>
+<div class="bottom_container">
+    <div class="left_container">
+        <div class="red_ball_left red_ball shape"></div>
+        <div class="blue_ball_left blue_ball shape"></div>
+        <div class="green_ball_left green_ball shape"></div>
+    </div>
+
+    <div class="right_container">
+        <div class="red_ball_right red_ball shape"></div>
+        <div class="blue_ball_right blue_ball shape"></div>
+        <div class="green_ball_right green_ball shape"></div>
+    </div>
+</div>
+</body>
+</html>
